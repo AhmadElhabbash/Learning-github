@@ -83,3 +83,53 @@ A commit is a snapshot of your code at a specific point in time.
 It saves your changes so you can review or go back to them later.
 
 Think of it as taking a photo of your project after making edits.
+
+### git status
+
+## What it does?
+
+- Shows the current state of your working directory and staging area.
+- Tells you which files have been modified, added, or deleted.
+- Helps you track what changes are ready to commit and what needs to be staged.
+
+```bash
+git status
+```
+
+### git add file-name
+
+### What it does?
+
+- Moves changes from the working directory to the staging area, preparing them for a commit.
+- Files must be staged before they can be committed.
+
+```bash
+git add file-name
+```
+
+```bash
+git add file-name other-file-name
+```
+
+```bash
+git add -A
+```
+
+```bash
+git restore --staged file-name
+```
+
+### What it does?
+
+- Removes files from the staging area, but keeps the changes in the working directory.
+- It "un-stages" files without discarding edits.
+
+### commit
+
+### What it does?
+
+- Takes a snapshot of the files in the staging area and saves it in the repository's history.
+
+````bash
+git commit -m "Commit Message"```
+````
