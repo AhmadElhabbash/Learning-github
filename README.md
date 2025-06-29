@@ -84,52 +84,50 @@ It saves your changes so you can review or go back to them later.
 
 Think of it as taking a photo of your project after making edits.
 
-### git status
+### Branch
 
-## What it does?
+- A branch is a separate copy of your codebase where you can work on new features or fixes without affecting the main codebase.
 
-- Shows the current state of your working directory and staging area.
-- Tells you which files have been modified, added, or deleted.
-- Helps you track what changes are ready to commit and what needs to be staged.
+- The main branch (usually called main or master) hold the final, stable version of your project.
 
-```bash
-git status
-```
+Example? You might create a branch called feature-log-in to add a log-in system.
 
-### git add file-name
+### git branch branch-name
 
 ### What it does?
 
-- Moves changes from the working directory to the staging area, preparing them for a commit.
-- Files must be staged before they can be committed.
+- Manages branches in your repository. Branches allow you to work on new features or fixes without affecting the main codebase.
+- List all branches, the current branch will be highlighted with an asterisk.
 
 ```bash
-git add file-name
+git branch
+
 ```
 
-```bash
-git add file-name other-file-name
-```
+- Create a new branch.
 
 ```bash
-git add -A
+git branch feature-log-in
 ```
 
+- Delete a branch.
+
 ```bash
-git restore --staged file-name
+git branch -d feature-log-in
 ```
+
+### git checkout branch-name
 
 ### What it does?
 
-- Removes files from the staging area, but keeps the changes in the working directory.
-- It "un-stages" files without discarding edits.
+- Switches between branches in your repository.
 
-### commit
+```bash
+git checkout feature-sing-up
+```
 
-### What it does?
+- Create and switch to a new branch.
 
-- Takes a snapshot of the files in the staging area and saves it in the repository's history.
-
-````bash
-git commit -m "Commit Message"```
-````
+```bash
+git checkout -b feature-sing-up
+```
