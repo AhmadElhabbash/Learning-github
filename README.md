@@ -76,7 +76,7 @@ git init //mean start git repo
 
 ```
 
-### Commit
+### Commits
 
 A commit is a snapshot of your code at a specific point in time.
 
