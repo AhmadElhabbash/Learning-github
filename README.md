@@ -131,3 +131,41 @@ git checkout feature-sing-up
 ```bash
 git checkout -b feature-sing-up
 ```
+
+### Getting Started with GitHub
+
+### What is GitHub and how does it complement Git?
+
+GitHub is an online platform for hosting, sharing, and collaborating on code or Git repositories.
+
+It is built around Git, the version control system, and adds a range of tools to simplify collaboration, project management, and code sharing.
+
+Think of GitHub as a cloud-based home for your Git repositories.
+
+Setting up a GitHub Repository
+You can create a new repository on GitHub by clicking the "+" button in the top-right corner of the screen and selecting "New repository" or by clicking this link after signing in: [Create a new repository.](https://github.com/new)
+
+### git push
+
+### What it does?
+
+- Uploads changes from your local repository to a remote repository (e.g. GitHub or GitLab).
+- It syncs your local repository with the remote repository so others can see and collaborate on it.
+  How git push works?
+
+After committing changes locally using git commit, they stay in your local repository.
+git push sends those committed changes to the remote repository, uploading with your latest work.
+
+```bash
+git push [remote-name] [branch-name]
+```
+
+-Remote name is the name of the remote repository, usually origin (default).
+-Branch name is the name of the branch you want to push to (e.g. main or master).
+
+### Pull Request (PR)
+
+A pull request is a feature in platforms like GitHub that allows developers to:
+
+- Request to merge changes from one branch into another.
+- Collaborate and review code before merging.
